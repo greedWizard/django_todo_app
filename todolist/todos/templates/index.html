@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block title %} ToDoList {% endblock title %}
+{% block header %} My todos 
+    <form action="{% url 'create_todo' %}">
+        <input type="submit" value="Create new" class="btn btn-primary btn-sm">
+    </form>
+{% endblock header %}
